@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="fill_parent"
+    n1:background="@drawable/bg_12"
+    n1:orientation="vertical">
+
+    <RelativeLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="fill_parent"
+        n1:layout_above="@+id/fl_adplaceholder"
+        n1:layout_centerInParent="true"
+        n1:orientation="vertical">
+
+        <LinearLayout
+            n1:layout_above="@+id/fad"
+            n1:layout_marginStart="@dimen/value_20"
+            n1:layout_marginEnd="@dimen/value_20"
+            n1:layout_width="fill_parent"
+            n1:layout_height="wrap_content"
+            n1:orientation="horizontal">
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_weight="1.0"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@+id/start"
+                    n1:layout_width="120.0dip"
+                    n1:layout_height="90.0dip"
+                    n1:layout_gravity="center"
+                    n1:src="@drawable/start" />
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="fill_parent"
+                n1:layout_weight="1.0"
+                n1:orientation="vertical">
+
+                <ImageView
+                    n1:id="@+id/myalbum"
+                    n1:layout_width="120.0dip"
+                    n1:layout_height="90.0dip"
+                    n1:layout_gravity="center"
+                    n1:src="@drawable/myalbum" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            n1:id="@+id/fad"
+            n1:layout_alignParentBottom="true"
+            n1:layout_width="match_parent"
+            n1:layout_height="wrap_content"
+            n1:layout_gravity="center"
+            n1:layout_marginBottom="10dp"
+            n1:gravity="center"
+            n1:orientation="horizontal"
+            n1:layout_marginStart="30dp"
+            n1:layout_marginEnd="30dp"
+            >
+
+
+            <ImageView
+                n1:padding="10dp"
+                n1:layout_weight="1"
+                n1:id="@+id/iv_share"
+                n1:layout_width="60dp"
+                n1:layout_height="60dp"
+                n1:layout_gravity="center"
+                n1:adjustViewBounds="true"
+                n1:src="@drawable/btn_share" />
+            <ImageView
+                n1:id="@+id/iv_reta"
+                n1:padding="10dp"
+                n1:layout_weight="1"
+                n1:layout_width="60dp"
+                n1:layout_height="60dp"
+                n1:layout_gravity="center"
+                n1:adjustViewBounds="true"
+                n1:src="@drawable/btn_rate" />
+            <ImageView
+                n1:layout_weight="1"
+                n1:padding="10dp"
+                n1:id="@+id/iv_privecy"
+                n1:layout_width="60dp"
+                n1:layout_height="60dp"
+                n1:layout_gravity="center"
+                n1:adjustViewBounds="true"
+                n1:src="@drawable/btn_privacy" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <FrameLayout
+        n1:layout_alignParentBottom="true"
+        n1:id="@+id/fl_adplaceholder"
+        n1:layout_width="match_parent"
+        n1:layout_height="305dp"
+        />
+
+</RelativeLayout>
